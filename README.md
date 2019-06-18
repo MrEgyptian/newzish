@@ -1,0 +1,2 @@
+# newzish
+New zish theme
