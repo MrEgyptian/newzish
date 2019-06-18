@@ -12,3 +12,9 @@ apt upgrade -y>/dev/null
 echo -e "\n installing text editors"
 apt install nano figlet -y >/dev/null
 cp -rf .bashrc $HOME
+sleep 1
+echo -e "$g installing extra keys"
+sleep 3
+
+mkdir .termux
+echo "extra-keys = [['ESC','/','-','HOME','UP','END','PGUP','#','$'],['TAB','CTRL','$PREFIX','LEFT','DOWN','RIGHT','PGDN','<','>']]" >.termux/termux.properties
